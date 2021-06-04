@@ -15,7 +15,7 @@ before_script:
 
 script:
   - docker --version
-  - docker built -t simple-node .
+  - docker build -t simple-node .
   - docker tag simple-node jwandekoken/simple-node:latest
 
 after_success:
